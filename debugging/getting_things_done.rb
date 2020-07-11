@@ -1,0 +1,18 @@
+def move(n, from_array, to_array)
+  return 0 if n == 0 
+  to_array << from_array.shift
+  move(n - 1, from_array, to_array)
+end
+
+# Example
+
+todo = ['study', 'walk the dog', 'coffee with Tom']
+done = ['apply sunscreen', 'go to the beach']
+
+move(2, todo, done)
+
+p todo # should be: ['coffee with Tom']
+p done # should be: ['apply sunscreen', 'go to the beach', 'study', 'walk the dog']
+
+# why? this is a recursion based problem, we have not set a condition for recursion
+# to stop so the stack is continuously moving through our recursive program.
