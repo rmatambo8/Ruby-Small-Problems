@@ -1,3 +1,1 @@
-This is a readme file.
-
-for the first commit on july 2nd.
+Problems of varying difficulty using the ruby language.
